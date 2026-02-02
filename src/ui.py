@@ -48,7 +48,7 @@ class TCMApp(ctk.CTk):
         self.header_frame = ctk.CTkFrame(self.main_frame, fg_color="transparent")
         self.header_frame.pack(fill="x", pady=(0, 20))
 
-        self.lbl_title = ctk.CTkLabel(self.header_frame, text="Project: My First Test", font=ctk.CTkFont(size=24, weight="bold"))
+        self.lbl_title = ctk.CTkLabel(self.header_frame, text="Project: My First Cycle Test", font=ctk.CTkFont(size=24, weight="bold"))
         self.lbl_title.pack(side="left")
 
         # Action Buttons (Right aligned)
