@@ -1,0 +1,12 @@
+certifi==2026.1.4
+charset-normalizer==3.4.4
+customtkinter==5.2.2
+darkdetect==0.8.0
+et_xmlfile==2.0.0
+idna==3.11
+openpyxl==3.1.5
+packaging==25.0
+panda==0.3.1
+requests==2.32.5
+setuptools==80.9.0
+urllib3==2.6.3
