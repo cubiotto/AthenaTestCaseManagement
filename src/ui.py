@@ -10,7 +10,7 @@ class TCMApp(ctk.CTk):
 
         # 2. Window Setup
         self.title("ATHENA Test Case Manager")
-        self.geometry("1000x600")
+        self.geometry("1080x1920")
 
         # 3. Grid Layout Configuration
         # We split the window into 2 columns: 
