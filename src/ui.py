@@ -33,9 +33,29 @@ class TCMApp(ctk.CTk):
         self.existing_project_button.pack(pady=10)
 
     def create_new_project(self):
-    # Logic for creating a new project
-        print("Button clicked: Create New Project")
-    pass
+        # Create a new top-level window
+        new_window = ctk.CTkToplevel(self)
+        new_window.title("Create New Project")
+        new_window.geometry("400x200")
+        new_window.attributes("-topmost", True)
+        
+        # Add label
+        label = ctk.CTkLabel(new_window, text="Enter Project Name:", font=("Arial", 16))
+        label.pack(pady=20)
+        
+        # Add entry field
+        project_name_entry = ctk.CTkEntry(new_window, width=300)
+        project_name_entry.pack(pady=10)
+        
+        # Add create button
+        create_button = ctk.CTkButton(new_window, text="Create", 
+                                       command=lambda: self.handle_project_creation(project_name_entry.get(), new_window))
+        create_button.pack(pady=10)
+    
+    def handle_project_creation(self, project_name, window):
+        # Logic to handle project creation
+        print(f"Creating project: {project_name}")
+        window.destroy()
 
     def select_existing_project(self):
     # Logic for selecting an existing project
