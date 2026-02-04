@@ -52,20 +52,20 @@ class TCMApp(ctk.CTk):
         project_id_frame.pack(pady=10, padx=50, fill="x")
         project_id_frame.grid_columnconfigure(1, weight=1)
         
-        project_id_entry_label = ctk.CTkLabel(project_id_frame, text="Project ID:", font=("Arial", 14))
+        project_id_entry_label = ctk.CTkLabel(project_id_frame, text="Project ID:", font=("Arial", 14), width=150)
         project_id_entry_label.grid(row=0, column=0, padx=(0, 20), sticky="w")
-        project_id_entry = ctk.CTkEntry(project_id_frame, width=300)
-        project_id_entry.grid(row=0, column=1, sticky="ew")
+        project_id_entry = ctk.CTkEntry(project_id_frame, width=600)
+        project_id_entry.grid(row=0, column=1, sticky="e")
 
         # Project Name row frame
         project_name_frame = ctk.CTkFrame(new_window, fg_color="transparent")
         project_name_frame.pack(pady=10, padx=50, fill="x")
         project_name_frame.grid_columnconfigure(1, weight=1)
         
-        project_name_entry_label = ctk.CTkLabel(project_name_frame, text="Project Name:", font=("Arial", 14))
+        project_name_entry_label = ctk.CTkLabel(project_name_frame, text="Project Name:", font=("Arial", 14), width=150)
         project_name_entry_label.grid(row=0, column=0, padx=(0, 20), sticky="w")
-        project_name_entry = ctk.CTkEntry(project_name_frame, width=300)
-        project_name_entry.grid(row=0, column=1, sticky="ew")
+        project_name_entry = ctk.CTkEntry(project_name_frame, width=600)
+        project_name_entry.grid(row=0, column=1, sticky="e")
         
         # Add create button
         create_button = ctk.CTkButton(new_window, text="Create", 
